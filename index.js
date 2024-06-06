@@ -61,3 +61,33 @@
 
     // let array = ["hamim","taimm","hamim"]
     // console.log(uniqueName(array));
+
+
+
+    let temprature = [2, 5, 4, 45, "error", 85, 8];
+
+    function getHigerandLower(arr){
+        // get higher value;
+        let higher = arr[0];
+        // get lower value;
+        let lower = arr[0];
+       
+        // itarate whole array
+        for(let i =0; i<arr.length; i++){
+            // avaid errror string
+            if(typeof arr[i]!=="number") continue
+
+            if(higher<arr[i]){
+                higher = arr[i]
+            }
+            console.log({higher});
+            if(lower>arr[i]){
+                lower = arr[i];
+            }
+            console.log({lower});
+
+        }
+       return higher-lower;
+    }
+
+    console.log(getHigerandLower(temprature));
