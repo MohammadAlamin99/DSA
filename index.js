@@ -80,13 +80,13 @@
             if(higher<arr[i]){
                 higher = arr[i]
             }
-            console.log({higher});
             if(lower>arr[i]){
                 lower = arr[i];
             }
-            console.log({lower});
-
+            
         }
+        console.log({higher});
+        console.log({lower});
        return higher-lower;
     }
 
