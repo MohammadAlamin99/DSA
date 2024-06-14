@@ -124,5 +124,5 @@
         //     return true;
         // }
 
-let result = compare([2,3,6],[4,9,36]);
-console.log(result);
+            // let result = compare([2,3,6],[4,9,36]);
+            // console.log(result);
