@@ -64,30 +64,65 @@
 
 
 
-    let temprature = [2, 5, 4, 45, "error", 85, 8];
+    // let temprature = [2, 5, 4, 45, "error", 85, 8];
 
-    function getHigerandLower(arr){
-        // get higher value;
-        let higher = arr[0];
-        // get lower value;
-        let lower = arr[0];
+    // function getHigerandLower(arr){
+    //     // get higher value;
+    //     let higher = arr[0];
+    //     // get lower value;
+    //     let lower = arr[0];
        
-        // itarate whole array
-        for(let i =0; i<arr.length; i++){
-            // avaid errror string
-            if(typeof arr[i]!=="number") continue
+    //     // itarate whole array
+    //     for(let i =0; i<arr.length; i++){
+    //         // avaid errror string
+    //         if(typeof arr[i]!=="number") continue
 
-            if(higher<arr[i]){
-                higher = arr[i]
-            }
-            if(lower>arr[i]){
-                lower = arr[i];
-            }
+    //         if(higher<arr[i]){
+    //             higher = arr[i]
+    //         }
+    //         if(lower>arr[i]){
+    //             lower = arr[i];
+    //         }
             
-        }
-        console.log({higher});
-        console.log({lower});
-       return higher-lower;
-    }
+    //     }
+    //     console.log({higher});
+    //     console.log({lower});
+    //    return higher-lower;
+    // }
 
-    console.log(getHigerandLower(temprature));
+    // console.log(getHigerandLower(temprature));
+
+// Counting String value;
+
+//     function strCount(str){
+//         let charList = {}
+//         for(let i = 0; i<str.length; i++){
+//             let char = str[i];
+//            if(charList[char]>0){
+//             charList[char]++;
+//            }
+//            else{
+//             charList[char]=1;
+//            }
+//         }
+//         return charList
+//     }
+//    const result = strCount("hello everyone");
+//    console.log(result);
+
+// compare 2 array 
+        // function compare(arr1, arr2){
+        //     if(arr1.length!==arr2.length){
+        //         return false;
+        //     }
+        //     for(let i=0; i<arr1.length; i++){
+        //         let curentIndex = arr2.indexOf(arr1[i]**2);
+        //         if(curentIndex===-1){
+        //             return false
+        //         }
+        //     }
+        //     return true;
+        // }
+
+let result = compare([2,3,6],[4,9,36]);
+console.log(result);
