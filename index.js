@@ -110,6 +110,8 @@
 //    const result = strCount("hello everyone");
 //    console.log(result);
 
+
+ 
 // compare 2 array 
         // function compare(arr1, arr2){
         //     if(arr1.length!==arr2.length){
@@ -124,5 +126,78 @@
         //     return true;
         // }
 
-            // let result = compare([2,3,6],[4,9,36]);
-            // console.log(result);
+        // let result = compare([2,3,6],[4,9,36]);
+        // console.log(result);
+
+
+// =================> Recursion
+        // normal for Loop
+    // function countDonw(n){
+    //     for(let i =n;i>0; i--){
+    //         console.log(i)
+    //     }
+    // }
+
+    // countDonw(10)
+
+    // Recursion
+    // function countDonw(n){
+    //     console.log(n)
+    //     n--;
+    //     if(n>0){
+    //         countDonw(n)
+    //     }
+    // }
+
+    // countDonw(10)
+
+//     function sumOfNum(n){
+//         let sum = 0;
+//         for (let i = n; i > 0; i--) {
+//             sum = sum+i;
+//         }
+//         return sum;
+//         }
+//   console.log(sumOfNum(10))
+
+
+
+// sum 10 to 0 with recursion
+
+        // function sumOfNum(n){
+        //     if(n<0){
+        //         return 0;
+        //     }
+        //     return n + sumOfNum(n-1);
+        // }
+        // console.log(sumOfNum(10));
+
+
+// sum all number of array
+        // function sumOfArray(arr){
+        //     if(arr.length===0){
+        //         return 0;
+        //     }
+        //     let rest = arr.slice(1); //bio(n)
+        //     return arr[0] + sumOfArray(rest)//(n)  
+        // }
+        // console.log(sumOfArray([2,3,5]));
+// Time complexity = n *n =n^2
+// Space Complexity = (n);
+
+
+// 17/6/24   7:02 Eid Mubarok
+
+function sumOfArray(arr){
+    return helperSum(arr, 0);
+}
+
+function helperSum(arr, index){
+    if(arr.length===index){
+        return 0;
+    }
+    return arr[index]+ helperSum(arr, index+1)
+}
+
+
+console.log(sumOfArray([2,3,5]));
