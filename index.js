@@ -188,16 +188,42 @@
 
 // 17/6/24   7:02 Eid Mubarok
 
-function sumOfArray(arr){
-    return helperSum(arr, 0);
-}
 
-function helperSum(arr, index){
-    if(arr.length===index){
-        return 0;
-    }
-    return arr[index]+ helperSum(arr, index+1)
-}
+// let array = new Array(8000).fill(5)
+
+// function sumOfArray(arr){
+//     return helperSum(arr, 0);
+// }
+
+// function helperSum(arr, index){
+//     if(arr.length===index){
+//         return 0;
+//     }
+//     return arr[index]+ helperSum(arr, index+1)
+// }
+
+// let now = Date.now()
+// console.log(sumOfArray(array));
+// let finish = Date.now();
+// console.log(`time duaration is ${finish-now}`);
 
 
-console.log(sumOfArray([2,3,5]));
+// good comming soon Insallah...........!
+
+
+
+// find even number in array with recursion
+
+        // function findEvenNumber(arr){
+        //         let result = [];
+        //         function helper(arr){
+        //                 if(arr.length===0) return;
+        //                 if(arr[0] % 2==0){
+        //                         result.push(arr[0]);
+        //                 }
+        //                 helper(arr.slice(1))
+        //                 }
+        //         helper(arr);
+        //         return result       
+        // }
+        // console.log(findEvenNumber([2,5,4,8,9,11,25,24]));
