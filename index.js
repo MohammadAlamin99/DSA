@@ -217,13 +217,71 @@
         // function findEvenNumber(arr){
         //         let result = [];
         //         function helper(arr){
-        //                 if(arr.length===0) return;
+        //                 if(arr.length===0) return; //o(1)
         //                 if(arr[0] % 2==0){
-        //                         result.push(arr[0]);
+        //                         result.push(arr[0]); //0(1)
         //                 }
-        //                 helper(arr.slice(1))
+        //                 helper(arr.slice(1))  //o(n)
         //                 }
-        //         helper(arr);
+        //         helper(arr); //o(n)
         //         return result       
         // }
         // console.log(findEvenNumber([2,5,4,8,9,11,25,24]));
+
+        // Time complexity = o(n*n)
+        // space complexity = o(n)
+
+
+// Best code for find even number on the array
+
+        //      function findEvenNumber(arr){
+        //         let result = [];
+        //         function helper(index){
+        //                 if(arr.length===index) return;
+        //                 if(arr[index] % 2==0){
+        //                         result.push(arr[index]);
+        //                 }
+        //                 helper(index+1)
+        //                 }
+        //         helper(0);
+        //         return result       
+        // }
+        // console.log(findEvenNumber([2,5,4,8,9,11,25,24]));
+
+
+// Linier Searching 
+
+        // function Linier(arr, value){
+        //         for(let i =0; i<arr.length; i++){
+        //                 if(arr[i]==value){
+        //                 return i;
+        //                 }
+        //         }
+        //         return -1;
+        // }
+        // console.log(Linier([1,23,52,12,45],12))
+
+
+
+
+// Binary Searching
+
+        // function binarySearch(arr, value){
+        //         let start = 0; 
+        //         let end = arr.length-1;
+        //         while(start<=end){
+        //                 let middle = Math.round((start+end)/2);
+        //                 if(arr[middle]===value)
+        //                         {
+        //                                 return middle
+        //                         }
+        //                 if(value>arr[middle]){
+        //                         start= middle+1;
+        //                 }
+        //                 else if(value<arr[middle]){
+        //                         end = middle-1;
+        //                 }
+        //         }
+        //         return -1
+        // }
+        // console.log(binarySearch([1,2,3,4,5],5));
