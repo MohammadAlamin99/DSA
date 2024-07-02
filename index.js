@@ -285,3 +285,28 @@
         //         return -1
         // }
         // console.log(binarySearch([1,2,3,4,5],5));
+
+        // ===============================================================
+                                        // array sorting
+        // ==============================================================
+
+
+// bubble sort 
+
+        function bubbleSort(arr){
+                for(let i =0; i<arr.length; i++){
+                        for(let j = 0; j<arr.length-1; j++){
+                                if(arr[j]>arr[j+1]){
+                                        let temp = arr[j];
+                                        arr[j] = arr[j+1];
+                                        arr[j+1] = temp;
+                                }
+                        }
+                }
+                return arr;
+        }
+
+        const array = [23,4,-5,8,56];
+        const result = bubbleSort(array);
+        console.log(result);
+
