@@ -293,20 +293,43 @@
 
 // bubble sort 
 
-        function bubbleSort(arr){
-                for(let i =0; i<arr.length; i++){
-                        for(let j = 0; j<arr.length-1; j++){
-                                if(arr[j]>arr[j+1]){
-                                        let temp = arr[j];
-                                        arr[j] = arr[j+1];
-                                        arr[j+1] = temp;
-                                }
-                        }
-                }
-                return arr;
-        }
+        // function bubbleSort(arr){
+        //         for(let i =0; i<arr.length; i++){
+        //                 for(let j = 0; j<arr.length-1; j++){
+        //                         if(arr[j]>arr[j+1]){
+        //                                 let temp = arr[j];
+        //                                 arr[j] = arr[j+1];
+        //                                 arr[j+1] = temp;
+        //                         }
+        //                 }
+        //         }
+        //         return arr;
+        // }
 
-        const array = [23,4,-5,8,56];
-        const result = bubbleSort(array);
-        console.log(result);
+        // const array = [23,4,-5,8,56];
+        // const result = bubbleSort(array);
+        // console.log(result);
+
+
+// Selection sort
+
+
+        // const selectionSort = (arr)=>{
+        //         for(let i = 0; i<arr.length; i++){
+        //                 let lowest = i;
+        //                 for(let j = i+1; j<arr.length;j++){
+        //                       if(arr[lowest]>arr[j]){
+        //                         lowest = j;
+        //                       }
+        //                 } 
+
+        //                 let temp = arr[i];
+        //                 arr[i] = arr[lowest];
+        //                 arr[lowest] = temp;
+        //         }
+        //         return arr;
+        // }
+
+        // console.log(selectionSort([5,45,78,23,6,2]))
+
 
