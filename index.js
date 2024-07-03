@@ -262,8 +262,6 @@
         // console.log(Linier([1,23,52,12,45],12))
 
 
-
-
 // Binary Searching
 
         // function binarySearch(arr, value){
@@ -293,22 +291,22 @@
 
 // bubble sort 
 
-        // function bubbleSort(arr){
-        //         for(let i =0; i<arr.length; i++){
-        //                 for(let j = 0; j<arr.length-1; j++){
-        //                         if(arr[j]>arr[j+1]){
-        //                                 let temp = arr[j];
-        //                                 arr[j] = arr[j+1];
-        //                                 arr[j+1] = temp;
-        //                         }
-        //                 }
-        //         }
-        //         return arr;
-        // }
+//      const array = [4,5,85,21,78,56,32];
 
-        // const array = [23,4,-5,8,56];
-        // const result = bubbleSort(array);
-        // console.log(result);
+//      const babbuleSort = (arr)=>{
+//         for(let i =0; i<arr.length-1; i++){
+//                 for(let j =0; j<arr.length-1; j++){
+//                         if(arr[j]> arr[j+1]){
+//                                 let temp = arr[j]
+//                                 arr[j]= arr[j+1]
+//                                 arr[j+1] = temp
+//                         }
+//                 }
+//         }
+//         return arr
+//      }
+
+//      console.log(babbuleSort(array));
 
 
 // Selection sort
@@ -322,14 +320,32 @@
         //                         lowest = j;
         //                       }
         //                 } 
-
         //                 let temp = arr[i];
         //                 arr[i] = arr[lowest];
         //                 arr[lowest] = temp;
         //         }
         //         return arr;
         // }
+        // console.log(selectionSort([48,45,78,-45,23,6,2]))
 
-        // console.log(selectionSort([5,45,78,23,6,2]))
+
+
+
+// Insertion AlGorithom
+
+        // function insertionSort(arr){
+        //         for(let i =1; i<arr.length; i++){
+        //                 for(let j = i; j>0; j--){
+        //                       if(arr[j]<arr[j-1]){
+        //                         let temp = arr[j];
+        //                         arr[j] = arr[j-1];
+        //                         arr[j-1] = temp;
+        //                       }
+        //                 }
+        //         }
+        //         return arr;
+        // }
+
+        // console.log(insertionSort([2,23,4,89,-79]))
 
 
